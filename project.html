@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .project {
+        max-width: 1200px;
+        margin: 5rem auto;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .project h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        color: #2ecc71;
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+
+    .project-card {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .project-card:hover {
+        transition: all .4s;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .project-card h3 {
+        color: rgb(51, 150, 93);
+        margin-bottom: 1rem;
+    }
+
+    .project-card p {
+        color: grey;
+        margin-bottom: 1rem;
+    }
+
+    .project-card a {
+        color: rgb(85, 26, 139);
+        padding: 0.4rem 1rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .project-card a:hover {
+        text-decoration: none;
+        border-radius: 5rem;
+        background-color: rgb(217, 217, 217);
+    }
+
+    .project .btn-line {
+        margin-top: 2rem;
+        padding: 0.8rem 2rem;
+        border: 2px solid rgb(46, 204, 113);
+        color: rgb(46, 204, 113);
+        font-weight: 600;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    img {
+        width: 250px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    /* media */
+    @media (max-width: 992px) {
+        .project {
+            padding: 1rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .nav {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .menu {
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .project-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            width: 100%;
+            padding: 1.5rem;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .project h2 {
+            font-size: 2rem;
+        }
+
+        .project-card {
+            padding: 1.2rem;
+        }
+
+        .project-card h3 {
+            font-size: 1.2rem;
+        }
+
+        .project-card p {
+            font-size: 0.9rem;
+        }
+    }
+</style>
+<body>
+    <!-- nav -->
+    <header class="navbar">
+        <div class="nav">
+            <div class="logo">Kimverley Herrera</div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Project Cards -->
+    <section id="project" class="project">
+        <h2>Projects/Portfolio</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Student Grade checker</h3>
+                <img src="image/student.png">
+                <p>Single-page student-portal built with HTML & CSS.</p>
+                <a href="https://kimverley.github.io/dashboard/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Blog Page</h3>
+                <img src="image/grid.png">
+                <p>A simple, responsive blog magazine layout built with CSS Grid.</p>
+                <a href="https://kimverley.github.io/magazine/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Photo Collage</h3>
+                <img src="image/gridmonkey.png">
+                <p>An responsive image gallery app for using css grid properties.</p>
+                <a href="https://kimverley.github.io/images/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>HTML Forms</h3>
+                <img src="image/formhtml.png">
+                <p>A responsive HTML Form to create an account to sign up an email.</p>
+                <a href="https://kimverley.github.io/Contact-form/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Voting App</h3>
+                <img src="image/poll.png">
+                <p>Simple JavaScript voting app with user interaction.</p>
+                <a href="https://kimverley.github.io/voting/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Event Speaker</h3>
+                <img src="image/employeecard.png">
+                <p>Simple object array use of Javascript model.</p>
+                <a href="https://kimverley.github.io/Event-Speaker/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Task Manager</h3>
+                <img src="image/taskmanage.png">
+                <p>A vanilla JavaScript app for adding, editing, deleting tasks.</p>
+                <a href="https://kimverley.github.io/Task-Manager/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Budget Planner</h3>
+                <img src="image/budget.png">
+                <p>A vanilla JavaScript app for budgeting plans.</p>
+                <a href="https://kimverley.github.io/budget-planner/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Guessing Number</h3>
+                <img src="image/guessnum.png">
+                <p>JavaScript generates a random number; player guesses with high/low hints.</p>
+                <a href="https://kimverley.github.io/Guess-Number/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Calculator</h3>
+                <img src="image/calc.png">
+                <p>Javascript calculator performs basic arithmetic operations.</p>
+                <a href="https://kimverley.github.io/Calculator/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Length Unit Calculator</h3>
+                <img src="image/unitconvert.png">
+                <p>JavaScript converts length units using formula-based mathematical ratios.</p>
+                <a href="https://kimverley.github.io/Length-Calc/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Expense Tracker</h3>
+                <img src="image/expensetrack.png">
+                <p>Vanilla JS project helps you add, delete, and edit expenses simply.</p>
+                <a href="https://kimverley.github.io/Expense-Tracker/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Text Formatter</h3>
+                <img src="image/textform.png">
+                <p>Vanilla JS manipulates input strings, applying styles, HTML, or formatting.</p>
+                <a href="https://kimverley.github.io/text-format/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Book Manager System</h3>
+                <img src="image/bookmanager.png">
+                <p>JS manipulates DOM, adding/removing books front/back using arrays.</p>
+                <a href="https://kimverley.github.io/book-manager/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Employee Search</h3>
+                <img src="image/employee.png">
+                <p>Vanilla JS showcasing different usecases for array search methods.</p>
+                <a href="https://kimverley.github.io/Employee_search/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>ETA Calculator</h3>
+                <img src="image/eta.png">
+                <p>Vanilla JS script calculating remaining time based on progress.</p>
+                <a href="https://kimverley.github.io/ETA-calculator/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Age Calculator</h3>
+                <img src="image/age.png">
+                <p>Simple web-based tool calculating exact age from date input.</p>
+                <a href="https://kimverley.github.io/Age-calculator/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Transition Card</h3>
+                <img src="image/cardflip.png">
+                <p>Interactive card flip website built using vanilla JavaScript and CSS.</p>
+                <a href="https://kimverley.github.io/card/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Flashcard</h3>
+                <img src="image/flashcard.png">
+                <p>CSS and JS are used to dynamically rotate flashcards.</p>
+                <a href="https://kimverley.github.io/Flashcard/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Memory Game</h3>
+                <img src="image/emoji-2d.png">
+                <p>JS 2D grid memory game matching emojis from array.</p>
+                <a href="https://kimverley.github.io/Memory_Game/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Seating Chart</h3>
+                <img src="image/seatingchart.png">
+                <p>JS 2D array seating chart to assign remove names.</p>
+                <a href="https://kimverley.github.io/Seating-Chart/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Array Collage</h3>
+                <img src="image/monkey-2d.png">
+                <p>JS array collage displaying multiple pictures in grid layout.</p>
+                <a href="https://kimverley.github.io/2d-Array-Collage/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Ecommerce Webpage</h3>
+                <img src="image/eccommerce.png">
+                <p>E-commerce webpage mockup using vanilla JS, HTML, and CSS.</p>
+                <a href="https://kimverley.github.io/Tech-Ecommerce-webPage/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Wack-A-Monkey</h3>
+                <img src="image/Wack-A-Monkey.png">
+                <p>My first ever made game using only Vanilla JS & HTML.</p>
+                <a href="https://kimverley.github.io/Wack-A-Monkey/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Tic-Tac-Toe</h3>
+                <img src="image/tic-tac-toe.png">
+                <p>Two players alternate marking 3x3 grid, get three aligned.</p>
+                <a href="https://kimverley.github.io/tic-tac-toe/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Pizza Delivery App</h3>
+                <img src="image/pizza-delivery.png">
+                <p>Mock of delivery app to showcase timers and interval in JS.</p>
+                <a href="https://kimverley.github.io/Pizza-delivery/" target="_blank">View More</a>
+            </div>
+
+            <div class="project-card">
+                <h3>JSON Project</h3>
+                <img src="image/JSON.png">
+                <p>Usecase for JSON data using an example of a car garage.</p>
+                <a href="https://kimverley.github.io/json/" target="_blank">View More</a>
+            </div>
+
+        </div> 
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Kimverley Herrera Mejia. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

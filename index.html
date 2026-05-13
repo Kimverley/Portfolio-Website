@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimverley's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+ .highlighted-workcard{
+    max-width: 1200px;
+  margin: 5rem auto;
+  padding: 2rem;
+  text-align: center;
+  }
+       .highlighted-card{
+        display: flex;
+        gap: 4rem;
+        margin: 2rem 0;
+       }
+.project-card {
+
+  width:min-content ;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.project-card:hover {
+  transition: all 0.2s ease;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+.project-card h3 {
+  color: rgb(51, 150, 93);
+  margin-bottom: 1rem;
+}
+
+
+.project-card p {
+    color: grey;
+  margin-bottom: 1rem;
+}
+.project-card a{
+    color:rgb(85, 26, 139) ;
+    padding: 0.4rem 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.project-card a:hover{
+    text-decoration: none;
+    border-radius: 5rem;
+    background-color: rgb(217, 217, 217);
+}
+
+.project-card a:hover{
+    text-decoration: none;
+    border-radius: 5rem;
+    background-color: rgb(217, 217, 217);
+}
+
+  img{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  @media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .project-card {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .project h2 {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    padding: 1.2rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+}
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+     <header class="navbar">
+        <div class="nav">
+            <div class="logo">Kimverley Herrera</div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+     </header>
+    
+    <!-- HERO -->
+     <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bring thoughts to life <br><span>through code & design</span></h1>
+            <p>Hello! I'm Kimverley Herrera, a student web developer creating websites.</p>
+            
+            <div class="hero-buttons">
+                <a href="project.html" class="btn">View My Work</a>
+                <a href="#contact" class="btn-line">Get in Touch</a>
+
+            </div>
+        </div>
+     </section>
+    <!-- ABOUT -->
+     <section id="about" class="about">
+        <h2>About Me</h2>
+
+        <div class="about-card">
+            <img src="image/profile.png" alt="Profile Picture" class="zoomed">
+            <div>
+                <p>I"m a West-mec coding student passionate about becoming a front-end developer</p>
+                <p><strong>Skills:</strong> Html, CSS, JavaScript</p>
+                <p><strong>Fun fact:</strong> I love drawing and making landscape paintings 🎨 </p>
+            </div>
+        </div>
+
+     </section>
+    <!-- PROJECT -->
+
+        <section>
+            <div class="highlighted-workcard">
+            
+                <h2>Highlighted Work</h2>
+                <div class="highlighted-card">
+                    <div class="project-card">
+                        <h3>Flashcard</h3>
+                        <img src="image/flashcard.png" >
+                        <p>CSS and JS are used to dynamically rotate flashcards </p>
+                        <a href="https://kimverley.github.io/Flashcard/" target="_blank">View More</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3> Employee Search</h3>
+                        <img src="image/employee.png" >
+                        <p>Vanilla JS showcasing different usescases for array search methods. </p>
+                        <a href="https://kimverley.github.io/Employee_search/" target="_blank">View More</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Budget Planner</h3>
+                        <img src="image/budget.png" >
+                        <p>A vanilla JavaScript app for budgeting plans. </p>
+                        <a href="https://kimverley.github.io/budget-planner/" target="_blank">View More</a>
+                    </div>
+                </div>
+                <a href="project.html">
+                <div class="proj-btn">View More of My Projects</div>
+            </a>
+            </div>
+        </section>
+    <!-- CONTACT -->
+     <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="map-container">
+            
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.6709253397553!2d-112.29541422511411!3d33.5359404733558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b4104080e38d9%3A0x1fbd2919e78fa444!2sWest-MEC%20-%20Central%20Campus!5e0!3m2!1sen!2sus!4v1765909994743!5m2!1sen!2sus"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-bottom">
+            <div class="contact-info">
+                <p><strong>Address:</strong> Phoenix, Arizona</p>
+                <p><strong>Email:</strong> <a href="mailto:student@example.com">kimverleyherrera73@gmail.com</a></p>
+                <p><strong>Phone:</strong> +1 (408) 220-8917</p>
+            </div>
+
+            <div class="social-icons">
+            <a href="https://github.com/Kimverley">Github</a>
+            </div>
+
+        </div>
+
+
+     </section>
+
+    <!-- FOOTER -->
+     <footer>
+        <p>&copy; 2026 Kimverley Herrera Mejia. All Rights Reserved.</p>
+     </footer>
+</body>
+</html>
+
